@@ -130,11 +130,11 @@ p {
 
   h2{
     font-size: 18px;
-    font-weight:initial;
+    font-weight:lighter;
   }
 
   p{
     font-size: 14px;
-    font-weight:normal;
+    font-weight:lighter;
   }
 }
