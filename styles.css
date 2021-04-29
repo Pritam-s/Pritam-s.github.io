@@ -45,10 +45,10 @@ p {
 
 
 .header {
-  position:relative;
-  text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
+  position: relative;
+text-align: center;
+background: linear-gradient(60deg, rgb(180, 231, 255) 0%, rgb(229, 212, 255) 100%);
+color: white;
 }
 .logo {
   width:50px;
@@ -70,6 +70,12 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+ 
+}
+
+lottie-player{
+  width: 500px;
+  height: 500px;
 }
 
 .waves {
@@ -136,5 +142,14 @@ p {
 
   p{
     font-size: 14px;
+  }
+
+  .flex{
+    flex-direction: column;
+  }
+
+  lottie-player{
+    width: 300px;
+    height: 300px;
   }
 }
