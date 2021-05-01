@@ -112,10 +112,16 @@ align-items: center;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  font-weight: 400;
 }
 
 .HeroText h1{
   margin: 0;
+}
+
+lottie-player{
+  width: 30rem;
+  height: 30rem;
 }
 
 /* .inner-header {
@@ -187,21 +193,36 @@ align-items: center;
     height:30vh;
   }
   h1 {
-    font-size:24px;
+    font-size:1.5rem;
   }
 
   .TextContainer{
-    display: grid;
-grid-template-rows: 10fr 20fr;
-align-items: baseline;
-padding-top: 2rem;
+    display: flex;
+    padding: 2rem;
   }
 
+  .HeroContainer{
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
 
+  lottie-player {
+    width: 20rem;
+    height: 20rem;
+}
 
   .navbar ul{
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
+
+  .HeroText {
+    text-align: center;
+}
+
+  .HeroText p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
 
 }
