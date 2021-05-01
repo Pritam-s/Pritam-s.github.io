@@ -38,7 +38,7 @@ h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight:300;
   letter-spacing: 2px;
-  font-size:48px;
+  font-size:3rem;
   color: var(--text-primary);
 }
 
@@ -100,7 +100,24 @@ justify-content: space-evenly;
 align-items: center;
 }
 
+.HeroText p{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
 
+.HeroText span{
+  background: linear-gradient(60deg, var(--primary-color),var(--secondary-color));
+   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: ;
+}
+
+.HeroText h1{
+  margin: 0;
+}
 
 /* .inner-header {
   height:5vh;
