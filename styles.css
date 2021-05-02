@@ -22,6 +22,10 @@ body {
   color:var(--text-primary);
 }
 
+main{
+  margin-bottom: 5rem;
+}
+
 body::-webkit-scrollbar {
   width: 0.50rem;
 }
@@ -31,7 +35,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: var(--gradient);
 }
 
 h1 {
@@ -68,6 +72,20 @@ justify-content: space-evenly;
   color: var(--text-secondary);
 }
 
+.navbar ul li a span{
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--text-secondary);
+}
+
+.navbar ul li a i{
+  display: none;
+}
+
+
+
+
+
 header{
   background: var(--gradient);
   margin-top: 0;
@@ -101,8 +119,9 @@ align-items: center;
 }
 
 .HeroText p{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 1rem 0;
+  font-weight: 300;
 }
 
 .HeroText span{
@@ -124,13 +143,11 @@ lottie-player{
   height: 30rem;
 }
 
-/* .inner-header {
-  height:5vh;
-  width:100%;
-  margin: 0;
-  padding: 0;
-} */
-
+/* Remove this later */
+.ContentHidden{
+  display: none;
+}
+/* Remove this later */
 
 
 
@@ -183,6 +200,33 @@ lottie-player{
     transform: translate3d(85px,0,0);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
@@ -196,11 +240,6 @@ lottie-player{
     font-size:1.5rem;
   }
 
-  .TextContainer{
-    display: flex;
-    padding: 2rem;
-  }
-
   .HeroContainer{
     flex-direction: column;
 justify-content: center;
@@ -212,9 +251,12 @@ align-items: center;
     height: 20rem;
 }
 
-  .navbar ul{
-    display: none;
-  }
+.TextContainer{
+  display: block;
+  padding: 2rem;
+text-shadow: 0px 0px 20px var(--text-primary);
+}
+
 
   .HeroText {
     text-align: center;
@@ -224,5 +266,64 @@ align-items: center;
     font-size: 1rem;
     margin: 0.5rem 0;
 }
+
+
+
+.navbar-bottom{
+  position: fixed;
+  bottom: 0;
+  
+  background-color: var(--text-primary);
+  
+  width: 100vw;
+  left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.navbar-bottom ul{
+  
+  padding-left: 0;
+}
+
+
+
+.navbar-bottom li a{
+  padding:2rem;
+}
+
+.navbar-bottom li a span{
+  display: none;
+}
+
+.navbar-bottom ul li a i{
+  display: inline-block;
+}
+
+.navbar-bottom img{
+  height: 2rem;
+  width: 2rem;
+  
+}
+
+.link-text{
+  display: none;
+}
+
+header h4{
+text-align:center;
+}
+
+.fas{
+  color: #FAFAFA;
+}
+
+/* Remove this later */
+.ContentHidden{
+  visibility: hidden;
+  display: block;
+}
+/* Remove this later */
+
 
 }
