@@ -123,7 +123,7 @@ text-shadow: 0px 0px 20px var(--text-primary);
 flex-direction: row-reverse;
 justify-content: space-evenly;
 align-items: center;
-margin: 2rem auto;
+margin: 5rem auto;
 }
 
 .HeroText p{
@@ -147,9 +147,11 @@ margin: 2rem auto;
   margin: 0;
 }
 
+
+
 lottie-player{
-  width: 30rem;
-  height: 30rem;
+  width: 31.25rem;
+  height: 31.25rem;
 }
 
 /* Remove this later */
@@ -270,6 +272,7 @@ text-shadow: 0px 0px 20px var(--text-primary);
 
   .HeroText {
     text-align: center;
+margin: 1.5rem auto;
 }
 
   .HeroText p {
