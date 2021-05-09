@@ -24,12 +24,12 @@ body {
   padding: 0;
 }
 
-body::first-letter{
-  text-transform: capitalize;
-}
-
 *{
   color:var(--text-primary);
+}
+
+*::first-letter{
+  text-transform: capitalize;
 }
 
 main{
@@ -164,6 +164,29 @@ lottie-player{
   width: 31.25rem;
   height: auto;
 }
+
+
+#CtaPrimary {
+  border: 2px solid var(--primary-color);
+  width: auto;
+  background-color: var(--primary-color);
+  color: var(--text-secondary);
+  border-radius: 4px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+#CtaSecondary {
+  border: 2px solid var(--primary-color);
+  width: auto;
+  background-color: var(--text-secondary);
+  color: var(--text-primary-light);
+  border-radius: 4px;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
 
 /* Remove this later */
 .ContentHidden{
