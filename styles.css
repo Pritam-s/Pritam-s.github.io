@@ -4,8 +4,8 @@
   --font-primary: 'Inter', sans-serif;
   --font-secondary: 'Josefin Sans',sans-serif;
 
-  --primary-color: #1EA5FC;
-  --secondary-color: #675cef;
+  --primary-color: #026CB0;
+  --secondary-color: #6a2fec;
   --gradient: linear-gradient(60deg, var(--primary-color)  0%, var(--secondary-color) 100%);
 
   --text-primary: #1A1A1A;
