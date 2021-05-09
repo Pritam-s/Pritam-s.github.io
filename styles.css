@@ -296,6 +296,10 @@ align-items: center;
     height: auto;
 }
 
+.HeroImage {
+  margin-bottom: 3rem;
+}
+
 .TextContainer{
   display: block;
   padding: 2rem;
