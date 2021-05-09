@@ -156,11 +156,13 @@ margin: 5rem auto;
   margin: 0;
 }
 
-
+.HeroImage{
+  margin-bottom: 6rem;
+}
 
 lottie-player{
   width: 31.25rem;
-  height: 31.25rem;
+  height: auto;
 }
 
 /* Remove this later */
