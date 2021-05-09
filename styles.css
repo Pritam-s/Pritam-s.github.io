@@ -16,6 +16,9 @@
 }
 
 
+/* *******************
+   Global styles Start
+   ******************* */
 body {
   margin:0;
   padding: 0;
@@ -44,6 +47,12 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--gradient);
 }
+/* *******************
+   Global styles End
+   ******************* */
+
+
+
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
@@ -258,8 +267,8 @@ align-items: center;
   }
 
   lottie-player {
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: auto;
 }
 
 .TextContainer{
@@ -272,7 +281,7 @@ text-shadow: 0px 0px 20px var(--text-primary);
 
   .HeroText {
     text-align: center;
-margin: 1.5rem auto;
+    margin: 2rem auto;
 }
 
   .HeroText p {
