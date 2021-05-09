@@ -54,6 +54,103 @@ body::-webkit-scrollbar-thumb {
 
 
 
+   
+/* *******************
+   Ham Menu Starts
+   ******************* */
+   .navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+   .logo-area{
+     font-family: var(--font-secondary);
+
+}
+header{
+    height: auto;
+    width: 100%;
+    z-index: 2;
+    background: #008bff;
+    position: relative;
+}
+.menulist {
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    gap: 6rem;
+}
+.menulist li{
+  font-size: 18px;
+  /* font-weight: bold; */
+  position: relative;
+  margin: 10px;
+}
+.menulist li a{
+  font-family: var(--font-secondary);
+    text-decoration: none;
+    color: #f8dada;
+}
+.check{
+    right: 0;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: 3px 20px 0px 0px;
+    z-index: 3;
+    opacity: 0;
+
+}
+.ham-menu{
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 1rem;
+    position: relative;
+    display: none;
+    /* border: 2px solid #ffe6e6; */
+    margin-left: auto;
+    z-index: 2;
+}
+.menuline {
+    background: #ffeeee;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    top: 50%;
+}
+.menuline::before {
+    content:'';
+    position: absolute;
+    background: #faefef;
+    height: 2px;
+    width: 25px;
+    top: -8px;
+}
+.menuline::after {
+    content:'';
+    position: absolute;
+    background: #ffeeee;
+    height: 2px;
+    width: 25px;
+    top: 8px;
+}
+
+/* *******************
+   Ham Menu End
+   ******************* */
+
+
+
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
@@ -75,10 +172,19 @@ p {
 }
 
 
+/* *******************
+   Old Navbar Start
+   ******************* */
+/*
 .navbar{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
-.navbar ul{
+ .navbar ul{
   display: flex;
 justify-content: space-evenly;
 }
@@ -101,9 +207,11 @@ justify-content: space-evenly;
 
 .navbar ul li a i{
   display: none;
-}
+} */
 
-
+/* *******************
+   Old Navbar End
+   ******************* */
 
 
 
@@ -114,12 +222,13 @@ header{
 }
 
 header h4{
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 1rem;
   color: var(--text-secondary);
+  margin-right: auto;
 }
 
 .TextContainer{
@@ -348,11 +457,78 @@ border-radius: 0.5rem;
     font-size:2rem;
   }
 
+
+  /* *******************
+   Ham Menu Mobile Starts
+   ******************* */
+
+   .navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+   header{
+    position: fixed;
+}
+
+.logo-area {
+  font-family: var(--font-secondary);
+  margin-left: 1.5rem;
+}
+.menulist{
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  margin-right: 0px;
+  background: var(--gradient);
+  top: -1rem;
+  padding-top: 10rem;
+  text-align: center;
+  transition: 0.5s;
+  right: -120%;
+  z-index: 1;
+}
+.ham-menu{
+    display: block;
+}
+.menulist {
+    display: block;
+    margin-right: 0px;
+    }
+.menulist li a{
+        font-size: 22px;
+        text-align: center;
+            }
+.check:checked ~ .menulist{
+    right: 0;
+    }
+    
+    .check:checked ~ .ham-menu .menuline{
+        transform: rotate(135deg);
+        transition: 0.3s ease;
+    }
+    .check:checked ~ .ham-menu .menuline::before,.check:checked ~ .ham-menu .menuline::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+  /* *******************
+   Ham Menu Ends
+   ******************* */
+
+
+
+
   .HeroContainer{
     flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: auto;
+width: 80%;
+margin-bottom: 10vh;
 }
 
   lottie-player {
@@ -362,6 +538,7 @@ margin: auto;
 
 .HeroImage {
   margin-bottom: 3rem;
+margin-top: 10rem;
 }
 
 .TextContainer{
