@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 :root{
-  --font-primary: 'Inter', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Josefin Sans',sans-serif;
 
-  --primary-color: #026CB0;
-  --secondary-color: #6a2fec;
-  --gradient: linear-gradient(60deg, var(--primary-color)  0%, var(--secondary-color) 100%);
+  --primary-color: #1E90FF;
+  --secondary-color: #B4E1FE;
+  --gradient: linear-gradient(60deg, var(--primary-color)  50%, var(--secondary-color) 100%);
 
   --text-primary: #1A1A1A;
   --text-primary-light: #526A7A;
@@ -75,7 +75,6 @@ header{
     height: auto;
     width: 100%;
     z-index: 2;
-    background: #008bff;
     position: relative;
 }
 .menulist {
@@ -96,7 +95,7 @@ header{
 .menulist li a{
   font-family: var(--font-secondary);
     text-decoration: none;
-    color: #f8dada;
+    color: var(--text-primary-light);
 }
 .check{
     right: 0;
@@ -216,7 +215,6 @@ justify-content: space-evenly;
 
 
 header{
-  background: var(--gradient);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -227,7 +225,7 @@ header h4{
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-right: auto;
 }
 
@@ -483,7 +481,7 @@ border-radius: 0.5rem;
   width: 60%;
   height: 100%;
   margin-right: 0px;
-  background: var(--gradient);
+  background: linear-gradient(10deg, #B4E1FE 0%, #EAF7FF 100%);
   top: -1rem;
   padding-top: 10rem;
   text-align: center;
